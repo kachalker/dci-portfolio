@@ -1,0 +1,207 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #01e08f;
+}
+#navbar {
+    background-color: #013870 !important;
+    --bs-navbar-active-color: #01e08f;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    --bs-navbar-color: #ecf6de;
+    --bs-navbar-brand-color: #ecf6de;
+    --bs-navbar-nav-link-padding-x: 1rem;
+    --bs-navbar-brand-font-size: 25px;
+    --bs-navbar-hover-color: #01e08f;
+    --bs-navbar-brand-hover-color: #01e08f;
+    font-size: 20px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.1em;
+    word-spacing: -1px;
+} 
+#myBtn:hover {
+    background-color: #555;
+}
+/* Home Page */
+#intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+#intro h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 70px;
+    color: #ecf6de;
+    text-decoration: underline #013870;
+    letter-spacing: -.5px;
+    margin-top: 1em;
+    -webkit-text-fill-color: #ecf6de;
+    -webkit-text-stroke: 1px #013870;
+}
+#intro p {
+    margin-top: 2em;
+    font-size: 18px;
+    letter-spacing: -.3px;
+    line-height: 1.4em;
+    color: #013870;
+    font-weight: 600;
+    background-color: #ecf6de;
+    padding: 1em;
+    border-radius: 25px;
+}
+/* Projects Page */
+#projects h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 60px;
+    color: #ecf6de;
+    text-decoration: underline #013870;
+    letter-spacing: -.5px;
+    margin: .5em; 
+    -webkit-text-fill-color: #ecf6de;
+    -webkit-text-stroke: 1px #013870;
+}
+#projects-intro {
+    font-size: 18px;
+    letter-spacing: -.3px;
+    line-height: 1.4em;
+    color: #013870;
+    font-weight: 600;
+    background-color: #ecf6de;
+    padding: 1em;
+    border-radius: 25px;
+    margin: 3em 10em;
+}
+#projects h2 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ecf6de;
+    -webkit-text-fill-color: #ecf6de;
+    -webkit-text-stroke: 1px #013870;
+    letter-spacing: -.5px;
+    margin-left: .5em;
+}
+#projects a {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ecf6de;
+    -webkit-text-fill-color: #ecf6de;
+    -webkit-text-stroke: 1px #013870;
+    letter-spacing: -.5px;
+}
+#projects a:hover {
+    font-size: 32px;
+}
+.projects-desc {
+    margin-top: 2em;
+    letter-spacing: -.3px;
+    line-height: 1.4em;
+    color: #013870;
+    font-weight: 600;
+    background-color: #ecf6de;
+    padding: 1em;
+    border-radius: 25px;
+    margin: -.1em 1.7em 1em 1.7em ;
+}
+#projects h3 {
+    font-size: 20px; 
+    font-weight: 700;
+}
+#projects p {
+    font-size: 18px;
+    font-weight: 600;
+}
+/* About Me Page */
+#about h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 60px;
+    color: #ecf6de;
+    text-decoration: underline #013870;
+    letter-spacing: -.5px;
+    margin: .5em;
+    -webkit-text-fill-color: #ecf6de;
+    -webkit-text-stroke: 1px #013870;
+}
+#about p {
+    font-size: 18px;
+    letter-spacing: -.3px;
+    line-height: 1.4em;
+    color: #013870;
+    font-weight: 600;
+    background-color: #ecf6de;
+    padding: 1em;
+    border-radius: 25px;
+}
+#about-img {
+    border-radius: 25px;
+}
+#about-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#resume-button {
+    font-size: 22px;
+    letter-spacing: -.3px;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: #ecf6de;
+    background-color: #013870;
+    margin-top: 1.7em;
+    --bs-btn-border-color: #013870;
+    margin-bottom: 1.7em;
+}
+#resume-button:hover {
+    color: #01e08f;
+    font-size: 25px;
+}
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    main {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+    #intro {
+        position: static;
+        margin-right: 0;
+        transform: none;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    main {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+    #intro {
+        position: static;
+        margin-right: 0;
+        transform: none;
+        width: 100%;
+    }
+    #projects-intro {
+        margin: 3em;
+    }
+}
